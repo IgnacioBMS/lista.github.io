@@ -1,6 +1,6 @@
 var lista = [];
 var archivo = new XMLHttpRequest();
-var file = 'lista.txt';
+var file = 'lista.csv';
 archivo.open('GET',file,false);
 archivo.send(null);
 var nombres = archivo.responseText;
