@@ -5,4 +5,4 @@ var file = 'lista.txt';
 archivo.open('GET',file,false);
 archivo.send(null);
 var nombres = archivo.responseText;
-console.write(nombres)
+console.log(nombres)
