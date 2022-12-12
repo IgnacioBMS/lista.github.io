@@ -34,4 +34,5 @@ for (i = 0; i < txt.length; i++) {
             'born': numero 
         });
     }
-}
+};
+console.log(userList)
