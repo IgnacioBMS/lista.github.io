@@ -5,7 +5,7 @@ var options = {
   
 var values = [];
 
-var userList = new List('users', options, values);
+var userList = new Array('users', options, values);
 var archivo = new XMLHttpRequest();
 var file = 'lista.txt';
 archivo.open('GET',file,false);
