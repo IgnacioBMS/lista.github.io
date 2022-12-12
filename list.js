@@ -13,7 +13,7 @@ archivo.send(null);
 var txt = archivo.responseText;
 function esLetra(caracter) {
 	let ascii = caracter.toUpperCase().charCodeAt(0);
-	return ascii > 64 && ascii < 91;
+	return ascii > 64 && ascii < 91 && ascii != ' ';
 };
 function esNumero(caracter) {
 	let ascii = caracter;
