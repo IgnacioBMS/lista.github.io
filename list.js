@@ -30,6 +30,7 @@ for (i = 0; i < txt.length; i++) {
         numero = numero + txt[i]
     }
     if (txt[i] == ' ' || i+1 == txt.length) {
+        console.log(nombre, numero)
         userList.add = ({
             'name': nombre,
             'born': numero 
