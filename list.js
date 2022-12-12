@@ -17,18 +17,19 @@ function esLetra(caracter) {
 };
 function esNumero(caracter) {
 	let ascii = caracter;
-	return ascii >= 0 && ascii < 10 && ascii != ' ';
+	return ascii >= 0 && ascii < 10 && ascii != ' ' && ascii != '\n';
 };
 var nombre = ''
 var numero = ''
 for (i = 0; i < txt.length; i++) {
+    console.log(txt[i])
     if (esLetra(txt[i])) {
         nombre = nombre + txt[i]
-    };
+    }
     if (esNumero(txt[i])) {
         numero = numero + txt[i]
     }
-    if (txt[i] == ' ' || i+1 == txt.length) {
+    if (txt[i] == '\n' || i+1 == txt.length) {
         userList.add = ({
             'name': nombre,
             'born': numero 
