@@ -29,7 +29,7 @@ for (i = 0; i < txt.length; i++) {
     if (esNumero(txt[i])) {
         numero = numero + txt[i]
     }
-    if (txt[i] == ' ' || i+1 == txt.length) {
+    else (txt[i] == ' ' || i+1 == txt.length) 
         console.log(nombre, numero)
         userList.add = ({
             'name': nombre,
@@ -37,6 +37,5 @@ for (i = 0; i < txt.length; i++) {
         });
         nombre = ''
         numero = ''
-    }
 };
 console.log(userList)
