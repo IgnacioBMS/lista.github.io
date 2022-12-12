@@ -30,7 +30,7 @@ for (i = 0; i < txt.length; i++) {
     if (esNumero(txt[i])) {
         numero = numero + txt[i]
     }
-    if (txt[i] == '\n' || i+1 == txt.length) {
+    if (txt[i] == ' ' || i+1 == txt.length) {
         userList.add = ({
             'name': nombre,
             'born': numero 
