@@ -19,6 +19,7 @@ function esNumero(caracter) {
 	let ascii = caracter;
 	return ascii >= 0 && ascii < 10 && ascii != ' ' && ascii != '\n';
 };
+txt = txt.replace('\n', '')
 var nombre = ''
 var numero = ''
 for (i = 0; i < txt.length; i++) {
