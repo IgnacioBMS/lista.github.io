@@ -23,7 +23,6 @@ txt = txt.replace('\n', '')
 var nombre = ''
 var numero = ''
 for (i = 0; i < txt.length; i++) {
-    console.log(txt[i])
     if (esLetra(txt[i])) {
         nombre = nombre + txt[i]
     }
@@ -35,6 +34,8 @@ for (i = 0; i < txt.length; i++) {
             'name': nombre,
             'born': numero 
         });
+        nombre = ''
+        numero = ''
     }
 };
 console.log(userList)
